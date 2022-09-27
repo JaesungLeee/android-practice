@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Paging Demo" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Codelab : Basic"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tb_home" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Codelab : Advanced"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_basic" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Local Paging Test"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/btn_advanced" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_remote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Remote Paging Test"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/btn_local" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

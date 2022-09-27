@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="jaesung.practice.pagingdemo.presentation.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_local"
+            app:destination="@id/navigation_local" />
+        <action
+            android:id="@+id/action_home_to_remote"
+            app:destination="@id/navigation_remote" />
+        <action
+            android:id="@+id/action_home_to_basic"
+            app:destination="@id/navigation_basic" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_local"
+        android:name="jaesung.practice.pagingdemo.presentation.localtest.LocalTestFragment"
+        android:label="LocalTestFragment"
+        tools:layout="@layout/fragment_local_test"/>
+    <fragment
+        android:id="@+id/navigation_remote"
+        android:name="jaesung.practice.pagingdemo.presentation.remotetest.RemoteTestFragment"
+        android:label="RemoteTestFragment"
+        tools:layout="@layout/fragment_remote_test"/>
+    <fragment
+        android:id="@+id/navigation_basic"
+        android:name="jaesung.practice.pagingdemo.presentation.basic.BasicFragment"
+        android:label="BasicFragment"
+        tools:layout="@layout/fragment_basic"/>
+</navigation>
