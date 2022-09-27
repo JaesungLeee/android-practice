@@ -1,6 +1,7 @@
 package jaesung.practice.pagingdemo.data.basic.repository
 
 import jaesung.practice.pagingdemo.data.basic.model.Article
+import jaesung.practice.pagingdemo.data.basic.paging.BasicPagingSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import java.time.LocalDateTime
@@ -20,4 +21,6 @@ class ArticleRepository {
             )
         }
     )
+
+    fun articlePagingSource() = BasicPagingSource()
 }
