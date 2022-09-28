@@ -57,6 +57,4 @@ class LocalTestFragment : BaseFragment<FragmentLocalTestBinding>(R.layout.fragme
             findNavController().navigateUp()
         }
     }
-
-
 }
