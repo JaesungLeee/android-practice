@@ -11,7 +11,7 @@ import jaesung.practice.pagingdemo.util.ViewModelFactory
 
 class RemoteTestFragment : BaseFragment<FragmentRemoteTestBinding>(R.layout.fragment_remote_test) {
 
-    private val viewModel: RemoteViewModel by viewModels { ViewModelFactory() }
+    private val viewModel: RemoteViewModel by viewModels { ViewModelFactory(requireContext()) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
