@@ -6,6 +6,9 @@
         <entry key="app/src/main/res/drawable-v24/ic_back_24.xml" value="0.198" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4777777777777778" />
         <entry key="app/src/main/res/layout/fragment_basic.xml" value="0.4777777777777778" />
+        <entry key="app/src/main/res/layout/fragment_local_test.xml" value="0.28177083333333336" />
+        <entry key="app/src/main/res/layout/item_article.xml" value="0.28177083333333336" />
+        <entry key="app/src/main/res/layout/item_local_test.xml" value="0.28072916666666664" />
       </map>
     </option>
   </component>

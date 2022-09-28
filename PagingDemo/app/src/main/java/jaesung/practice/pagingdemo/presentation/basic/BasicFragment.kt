@@ -22,7 +22,7 @@ import timber.log.Timber
 
 class BasicFragment : BaseFragment<FragmentBasicBinding>(R.layout.fragment_basic) {
 
-    private val viewModel: BasicViewModel by viewModels { ViewModelFactory() }
+    private val viewModel: BasicViewModel by viewModels { ViewModelFactory(requireContext()) }
 //    private val articleAdapter by lazy { ArticleAdapter() }
     private val pagingAdapter by lazy { BasicPagingAdapter() }
 
